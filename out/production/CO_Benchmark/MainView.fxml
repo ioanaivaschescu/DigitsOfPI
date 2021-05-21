@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppMainController">
+   <children>
+      <Button alignment="CENTER" layoutX="87.0" layoutY="43.0" mnemonicParsing="false" onAction="#warmup" text="Warm-up" textAlignment="CENTER" />
+      <TextField fx:id="EnterDigits" alignment="CENTER" layoutX="46.0" layoutY="249.0" prefHeight="32.0" prefWidth="149.0" promptText="Number of digits of Pi" />
+      <Button layoutX="46.0" layoutY="293.0" mnemonicParsing="false" onAction="#getDigitsOfPi" prefHeight="25.0" prefWidth="149.0" text="Compute Digits of Pi" />
+      <ImageView fitHeight="400.0" fitWidth="390.0" layoutX="211.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@3iLo.gif" />
+         </image>
+      </ImageView>
+      <Text fx:id="time" fill="WHITE" fontSmoothingType="LCD" layoutX="11.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="195.20001220703125" />
+      <Text fx:id="TextWarmUp" fill="WHITE" layoutX="23.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warm-up first!" textAlignment="CENTER" wrappingWidth="195.20001220703125" />
+      <Button fx:id="close" alignment="CENTER" cancelButton="true" layoutX="45.0" layoutY="362.0" mnemonicParsing="false" onAction="#cancelButton" text="Cancel" textAlignment="CENTER" />
+      <ImageView fitHeight="88.0" fitWidth="95.0" layoutX="77.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1234.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
